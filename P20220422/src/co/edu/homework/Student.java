@@ -22,21 +22,81 @@ public class Student {
 		int eng;
 		int math;
 		
-	//생성자
-		
-		public Student (int studentNo, String studentName, int kor, int eng, int math) {
-			this.studentNo=studentNo;
-			this.studentName =studentName;
-			this.kor=kor;
+
+    //생성자		
+		public Student (int studentNo,String studentName, int kor, int eng,int math) {
 			this.eng=eng;
-			this.math=math;
+			this.kor =kor;
+			this.studentName=studentName;
+			this.studentNo=studentNo;
 		}
+		
 		
     //메소드
 		
-		void stdnum() {
-			
-		}
 		
-	
+		
+		public int getStudentNo() {
+			return studentNo;
+		}
+
+
+		public void setStudentNo(int studentNo) {
+			this.studentNo = studentNo;
+		}
+
+
+		public String getStudentName() {
+			return studentName;
+		}
+
+
+		public void setStudentName(String studentName) {
+			this.studentName = studentName;
+		}
+
+
+		public int getKor() {
+			return kor;
+		}
+
+
+		public void setKor(int kor) {
+			this.kor = kor;
+		}
+
+
+		public int getEng() {
+			return eng;
+		}
+
+
+		public void setEng(int eng) {
+			this.eng = eng;
+		}
+
+
+		public int getMath() {
+			return math;
+		}
+
+
+		public void setMath(int math) {
+			this.math = math;
+		}
+
+
+		public void showInfo() {
+			 System.out.println("이름>"  + studentName );
+			 System.out.println("국어점수>" + kor);
+			 System.out.println("영어점수>" + eng);
+			 System.out.println("수학점수>" + math);
+			 System.out.println("평균점수>" );
+		}
+
+
+		
+		
+	    
+		
 }
